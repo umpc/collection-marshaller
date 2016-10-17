@@ -5,7 +5,7 @@ This is just a simple wrapper for saving and restoring a collection to and from 
 ```
 geoindex := collection.New()
 
-pack := cmarshaller.PackageCollection{ geoindex }
+pack := colmarshaller.PackageCollection{ geoindex }
 
 b, err := pack.MarshalJSON()
 if err != nil {
